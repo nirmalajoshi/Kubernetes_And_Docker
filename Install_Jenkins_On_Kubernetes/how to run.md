@@ -1,3 +1,4 @@
+Steps to install Jenkins on Kubernetes using files in "Install_Jenkins_On_Kubernetes" folder
 1.Create Namespace
 kubectl create namespace jenkins
 
@@ -17,7 +18,7 @@ kubectl logs <pod name> -n jenkins
 
 Check for password in logs.The default username is admin,to obtain password check pod logs and then you can change password later.
 
-5.To access ,get external ip with below command
+5.To access,get external ip with below command
 
 minikube service jenkins -n jenkins
 
